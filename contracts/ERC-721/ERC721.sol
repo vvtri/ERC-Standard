@@ -7,10 +7,11 @@ import '../utilities/Counter.sol';
 import '../utilities/ReentranceGuard.sol';
 import '../ERC-165/ERC165.sol';
 import {IERC721TokenReceiver} from './IERC721TokenReceiver.sol';
+// import  '@openzeppelin/contracts/token/ERC721/ERC721.sol';
 
 import 'hardhat/console.sol';
 
-abstract contract ERC721 is IERC721, ERC721Metadata, ReentranceGuard, ERC165 {
+contract ERC721 is IERC721, ERC721Metadata, ReentranceGuard, ERC165 {
   using Counters for Counter;
   mapping(uint256 tokenId => address) private _owners;
   mapping(address owner => uint256) private _balances;
@@ -215,4 +216,8 @@ abstract contract ERC721 is IERC721, ERC721Metadata, ReentranceGuard, ERC165 {
       'retval == IERC721Receiver.onERC721Received.selector'
     );
   } //checked
+
+    function totalSupply() external view returns (uint256) {
+
+    }
 }
