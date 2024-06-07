@@ -1,0 +1,80 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x786333eE4854a4C5838E55Ab9674E9bB86B7b70d",
+      "txHash": "0x8ede146a80517b8f0551a803e6ba4132a3437ace5cec486d6da7a0713223ad82",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "bd582412043de7a25f9ee6d6a0313674d194a091cda1cf96442c616c9f978e2e": {
+      "address": "0x4f6dF5405eD84299311c0FfeAE11E94d80163413",
+      "txHash": "0x79bdd1566317942ab8321d6865451398a88cab61059c10c6d4d500ef94c65c33",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "val",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box1",
+            "src": "contracts\\upgradable\\Box1.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    },
+    "6cc8be5c1b49f41f966cc9371d12570d69bc64370be7eb0e25469ea952ea8431": {
+      "address": "0x0BC6E38cb70BAD8Aa6dDcc2d12622e57f1144e93",
+      "txHash": "0xf8fe9f17e39da1a8c2a744c8b51399db15c04445c38638ffd887163311712b05",
+      "layout": {
+        "solcVersion": "0.8.24",
+        "storage": [
+          {
+            "label": "val",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box2",
+            "src": "contracts\\upgradable\\Box2.sol:8"
+          },
+          {
+            "label": "val2",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_uint256",
+            "contract": "Box2",
+            "src": "contracts\\upgradable\\Box2.sol:9"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "Box2",
+            "src": "contracts\\upgradable\\Box2.sol:10"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}
